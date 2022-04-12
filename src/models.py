@@ -14,8 +14,8 @@ class Personajes(Base):
     # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
     nombre = Column(String(250), nullable=False)
-    genero = Column(String(250), nullable=False)
-    planeta = Column(String(250), nullable=False)
+    genero = Column(String(250), nullable=True)
+    planeta = Column(String(250), nullable=True)
     ubicacion = Column(String(250), nullable=False)
     estado_id = Column(String(250), ForeignKey('especie.estado'))
 
